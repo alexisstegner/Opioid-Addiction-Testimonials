@@ -1,49 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
+/* There's where you would put your Google Fonts import */
+
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*This is some further normalization and base styles. */
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+
+
+.content-band {
+  width:100%;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.live-area {
+  max-width: 1060px;
+  margin: 0 auto;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+
+.content-wrapper {
+  /*display: flex;
+  flex-flow: row nowrap;
+  align-items: center;*/
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+.text-wrapper {
+  /*flex: 1 1 50%;*/
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+
+.main-banner {
+  background-size: cover;
+  background: white url('../Header.png') no-repeat center center;
+  /*min-height: 770px;*/
+  /*background-size: 100%;*/
+  text-align: center;
+  max-height: 700px;
 }
 
-textarea {
-    resize: vertical;
+.main-banner .text-wrapper {
+  padding-top: 200px;
+  padding-bottom: 80px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.main-banner h1 {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.main-banner .text-wrapper {
+  padding-top: 250px;
+  padding-bottom: 240px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-banner h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.read h2 {
+  color: #232c5f;
+  text-align: center;
+  font-weight: bold;
+  font-size: 38px;
+  padding-top: 70px;
+}
+
+.Denny h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.Andrew h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.Julia h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.Steven h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.quote {
+  align-content: center;
+}
+
+.quote h2 {
+  color: #6d6d6d;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  align-items: center;
+}
+
+.quote h3 {
+  color: #6d6d6d;
+  text-align: center;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-bottom: 65px;
+  align-content: center;
+}
+
+.contact {
+  background-color: #e8e8e8;
+  min-height: 260px;
+}
+
+.contact h2 {
+  color: #232c5f;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 70px;
+  align-items: center;
+}
+
+.contact h4 {
+  color: #6d6d6d;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  align-items: center;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -55,10 +158,6 @@ img {
     width: 100%;
     height: auto;
 }
-
-/*Here's where you would put your Google Fonts import*/
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
-
 
 /* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
 THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
